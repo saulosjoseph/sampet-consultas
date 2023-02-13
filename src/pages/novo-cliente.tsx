@@ -24,7 +24,7 @@ export default function NewClient() {
           <Row className="mb-3">
             <Col>
               <FloatingLabel label="CPF tutor">
-                <Form.Control type="text" placeholder="cpf tutor" />
+                <Form.Control type="number" placeholder="cpf tutor" />
               </FloatingLabel>
             </Col>
           </Row>
