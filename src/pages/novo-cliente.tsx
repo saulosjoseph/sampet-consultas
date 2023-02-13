@@ -32,7 +32,7 @@ export default function NewClient() {
             <Col>
               <div className="d-grid gap-2">
                 <Button variant="primary" size="lg">
-                  Cadastrar novo proprietário
+                  Buscar proprietário
                 </Button>
               </div>
             </Col>
