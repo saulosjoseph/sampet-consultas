@@ -126,6 +126,7 @@ export default function NewConsultation() {
       setAddress("");
       setOwnerAnimals([]);
       setAnimal("");
+      setShowNewName(true);
     }
   }, [owner, allOwners]);
 
