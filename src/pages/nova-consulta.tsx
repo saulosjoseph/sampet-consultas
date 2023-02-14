@@ -126,7 +126,7 @@ export default function NewConsultation() {
       setAnimal("");
       setShowNewName(true);
     }
-  }, [owner]);
+  }, [owner, allOwners]);
 
   useEffect(() => {
     if (animal.length > 0 && animal !== "0" && animal !== "label") {
@@ -147,7 +147,7 @@ export default function NewConsultation() {
       setVaccination("");
       setVermifuge("");
     }
-  }, [animal]);
+  }, [animal, ownerAnimals]);
 
   return (
     <>
@@ -170,7 +170,9 @@ export default function NewConsultation() {
                   </option>
                   <option value="0">Cadastrar novo proprietário</option>
                   {allOwners.map((element) => (
-                    <option value={element.id}>{element.name}</option>
+                    <option key={element.id} value={element.id}>
+                      {element.name}
+                    </option>
                   ))}
                 </Form.Select>
               </FloatingLabel>
@@ -257,7 +259,9 @@ export default function NewConsultation() {
                       </option>
                       <option value="0">Cadastrar novo animal</option>
                       {ownerAnimals.map((element) => (
-                        <option value={element.id}>{element.name}</option>
+                        <option key={element.id} value={element.id}>
+                          {element.name}
+                        </option>
                       ))}
                     </Form.Select>
                   </FloatingLabel>
