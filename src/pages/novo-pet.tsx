@@ -16,16 +16,16 @@ export default function NewPet() {
         <div>
           <Row className="mb-3">
             <Col>
-              <FloatingLabel label="Nome pet">
-                <Form.Control type="text" placeholder="Nome pet" />
+              <FloatingLabel label="Nome animal">
+                <Form.Control type="text" placeholder="Nome animal" />
               </FloatingLabel>
             </Col>
           </Row>
           <Row className="mb-3">
             <Col>
-              <FloatingLabel label="Tutor">
+              <FloatingLabel label="Proprietário">
                 <Form.Select aria-label="Floating label select example">
-                  <option>Selecione o tutor</option>
+                  <option>Selecione o proprietário</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -37,7 +37,7 @@ export default function NewPet() {
             <Col>
               <div className="d-grid gap-2">
                 <Button variant="primary" size="lg">
-                  Cadastrar novo pet
+                  Cadastrar novo animal
                 </Button>
               </div>
             </Col>

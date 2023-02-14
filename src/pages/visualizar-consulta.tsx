@@ -16,9 +16,9 @@ export default function NewConsultation() {
         <div>
           <Row className="mb-3">
             <Col>
-              <FloatingLabel label="Tutor">
+              <FloatingLabel label="Proprietário">
                 <Form.Select aria-label="Floating label select example">
-                  <option>Selecione o tutor</option>
+                  <option>Selecione o proprietário</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -28,9 +28,9 @@ export default function NewConsultation() {
           </Row>
           <Row className="mb-3">
             <Col>
-              <FloatingLabel label="Pet">
+              <FloatingLabel label="Animal">
                 <Form.Select aria-label="Floating label select example">
-                  <option>Selecione o pet</option>
+                  <option>Selecione o animal</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>

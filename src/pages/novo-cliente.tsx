@@ -16,15 +16,15 @@ export default function NewClient() {
         <div>
           <Row className="mb-3">
             <Col>
-              <FloatingLabel label="Nome tutor">
-                <Form.Control type="text" placeholder="Nome tutor" />
+              <FloatingLabel label="Nome proprietário">
+                <Form.Control type="text" placeholder="Nome proprietário" />
               </FloatingLabel>
             </Col>
           </Row>
           <Row className="mb-3">
             <Col>
-              <FloatingLabel label="CPF tutor">
-                <Form.Control type="number" placeholder="cpf tutor" />
+              <FloatingLabel label="CPF proprietário">
+                <Form.Control type="number" placeholder="cpf proprietário" />
               </FloatingLabel>
             </Col>
           </Row>
@@ -32,7 +32,7 @@ export default function NewClient() {
             <Col>
               <div className="d-grid gap-2">
                 <Button variant="primary" size="lg">
-                  Cadastrar novo tutor
+                  Buscar proprietário
                 </Button>
               </div>
             </Col>

@@ -19,10 +19,10 @@ export default function Home() {
           </Row>
           <Row className="mb-3">
             <Col>
-              <Link href="/visualizar-consulta">
+              <Link href="/consultas-andamento">
                 <div className="d-grid gap-2">
                   <Button variant="primary" size="lg">
-                    Visualizar consulta
+                    Consultas encaminhadas
                   </Button>
                 </div>
               </Link>
@@ -33,7 +33,7 @@ export default function Home() {
               <Link href="/novo-cliente">
                 <div className="d-grid gap-2">
                   <Button variant="primary" size="lg">
-                    Cadastrar novo tutor
+                    Buscar proprietário
                   </Button>
                 </div>
               </Link>
@@ -41,10 +41,10 @@ export default function Home() {
           </Row>
           <Row className="mb-3">
             <Col>
-              <Link href="/novo-pet">
+              <Link href="/visualizar-consulta">
                 <div className="d-grid gap-2">
                   <Button variant="primary" size="lg">
-                    Cadastrar novo pet
+                    Buscar consulta
                   </Button>
                 </div>
               </Link>
