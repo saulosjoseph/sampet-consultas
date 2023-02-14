@@ -89,6 +89,8 @@ export default function NewConsultation() {
   const [ownerAnimals, setOwnerAnimals] = useState<Animal[]>([]);
   const [owner, setOwner] = useState("");
   const [showNewName, setShowNewName] = useState(false);
+  const [showAnimalNewName, setShowAnimalNewName] = useState(false);
+  const [showAnimalForm, setShowAnimalForm] = useState(false);
   const [animal, setAnimal] = useState("");
   const [cpf, setCpf] = useState("");
   const [phone, setPhone] = useState("");
@@ -124,7 +126,6 @@ export default function NewConsultation() {
       setAddress("");
       setOwnerAnimals([]);
       setAnimal("");
-      setShowNewName(true);
     }
   }, [owner, allOwners]);
 
@@ -139,6 +140,7 @@ export default function NewConsultation() {
         setPelage(selectedAnimal.pelage);
         setVaccination(selectedAnimal.vaccination);
         setVermifuge(selectedAnimal.vermifuge);
+        setShowAnimalNewName(false);
       }
     } else {
       setSpecie("");
@@ -146,6 +148,7 @@ export default function NewConsultation() {
       setPelage("");
       setVaccination("");
       setVermifuge("");
+      setShowAnimalNewName(true);
     }
   }, [animal, ownerAnimals]);
 
@@ -269,6 +272,23 @@ export default function NewConsultation() {
               </Row>
               {animal.length > 0 && animal !== "label" ? (
                 <>
+                  {showAnimalNewName ? (
+                    <Row className="mb-3">
+                      <Col>
+                        <FloatingLabel label="Nome">
+                          <Form.Control
+                            type="text"
+                            placeholder="Nome"
+                            onChange={(event) => {
+                              setAnimal((event.target as any).value);
+                            }}
+                          />
+                        </FloatingLabel>
+                      </Col>
+                    </Row>
+                  ) : (
+                    <></>
+                  )}
                   <Row className="mb-3">
                     <Col>
                       <FloatingLabel label="Espécie">
