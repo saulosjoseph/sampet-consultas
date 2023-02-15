@@ -234,12 +234,25 @@ export default function Consultation() {
                                 />
                               </FloatingLabel>
                             </Col>
+                          </Row>
+                          <Row className="mb-1">
                             <Col>
                               <FloatingLabel
                                 controlId="dosesInput"
-                                label="Doses"
+                                label="Dose"
                               >
-                                <Form.Control type="text" placeholder="Doses" />
+                                <Form.Control type="text" placeholder="Dose" />
+                              </FloatingLabel>
+                            </Col>
+                            <Col>
+                              <FloatingLabel
+                                controlId="horarioInput"
+                                label="Horário"
+                              >
+                                <Form.Control
+                                  type="text"
+                                  placeholder="Horário"
+                                />
                               </FloatingLabel>
                             </Col>
                           </Row>
@@ -252,17 +265,6 @@ export default function Consultation() {
                                 <Form.Control
                                   type="text"
                                   placeholder="Administração"
-                                />
-                              </FloatingLabel>
-                            </Col>
-                            <Col>
-                              <FloatingLabel
-                                controlId="horarioInput"
-                                label="Horário"
-                              >
-                                <Form.Control
-                                  type="text"
-                                  placeholder="Horário"
                                 />
                               </FloatingLabel>
                             </Col>
