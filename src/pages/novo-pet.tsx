@@ -25,7 +25,7 @@ export default function NewPet() {
             <Col>
               <FloatingLabel label="Proprietário">
                 <Form.Select aria-label="Floating label select example">
-                  <option>Selecione o proprietário</option>
+                  <option>Selecione</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>

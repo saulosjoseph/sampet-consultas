@@ -155,7 +155,7 @@ export default function NewConsultation() {
               >
                 <Form.Select>
                   <option disabled={owner.length > 0} value="label">
-                    Selecione o Proprietário
+                    Selecione
                   </option>
                   <option value="0">Cadastrar novo proprietário</option>
                   {allOwners.map((element) => (
@@ -244,7 +244,7 @@ export default function NewConsultation() {
                         disabled={animal.length > 0 && animal !== "label"}
                         value="label"
                       >
-                        Selecione o animal
+                        Selecione
                       </option>
                       <option value="0">Cadastrar novo animal</option>
                       {ownerAnimals.map((element) => (
@@ -287,7 +287,7 @@ export default function NewConsultation() {
                           }}
                         >
                           <option disabled={specie.length > 0} value="0">
-                            Selecione a espécie
+                            Selecione
                           </option>
                           <option value="canino">Canino</option>
                           <option value="felino">Felino</option>
@@ -305,7 +305,7 @@ export default function NewConsultation() {
                           }}
                         >
                           <option disabled={gender.length > 0} value="0">
-                            Selecione o sexo
+                            Selecione
                           </option>
                           <option value="f">F</option>
                           <option value="m">M</option>
@@ -325,7 +325,7 @@ export default function NewConsultation() {
                           }}
                         >
                           <option value="0" disabled={pelage.length > 0}>
-                            Selecione a pelagem
+                            Selecione
                           </option>
                           <option value="longa">Longa</option>
                           <option value="curta">Curta</option>
@@ -343,7 +343,7 @@ export default function NewConsultation() {
                           }}
                         >
                           <option value="0" disabled={vaccination.length > 0}>
-                            Selecione a condição
+                            Selecione
                           </option>
                           <option value="atrasada">Atrasadas</option>
                           <option value="em dia">Em dia</option>
@@ -363,7 +363,7 @@ export default function NewConsultation() {
                           }}
                         >
                           <option value="0" disabled={vermifuge.length > 0}>
-                            Selecione a condição
+                            Selecione
                           </option>
                           <option value="atrasado">Atrasado</option>
                           <option value="em dia">Em dia</option>
