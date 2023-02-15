@@ -11,8 +11,8 @@ import {
 export default function NewClient() {
   return (
     <>
+      <Header></Header>
       <Container>
-        <Header></Header>
         <div>
           <Row className="mb-3">
             <Col>

@@ -11,8 +11,8 @@ import {
 export default function NewConsultation() {
   return (
     <>
+      <Header></Header>
       <Container>
-        <Header></Header>
         <div>
           <Row className="mb-3">
             <Col>

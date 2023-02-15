@@ -1,4 +1,7 @@
 import Header from "@/components/header";
+import { Animal } from "@/interfaces/animal.interface";
+import { User } from "@/interfaces/user.interface";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   Button,
@@ -8,24 +11,6 @@ import {
   Form,
   Row,
 } from "react-bootstrap";
-
-interface Animal {
-  id: string;
-  name: string;
-  specie: string;
-  gender: string;
-  pelage: string;
-  vaccination: string;
-  vermifuge: string;
-}
-interface User {
-  id: string;
-  name: string;
-  cpf: string;
-  phone: string;
-  address: string;
-  animals: Animal[];
-}
 
 const mockUserData: User[] = [
   {
@@ -155,8 +140,8 @@ export default function NewConsultation() {
 
   return (
     <>
+      <Header></Header>
       <Container>
-        <Header></Header>
         <div>
           <Row className="mb-3">
             <Col>
@@ -404,7 +389,25 @@ export default function NewConsultation() {
                     <Col>
                       <Form.Check
                         type="checkbox"
+                        label="Consulta"
+                        onChange={(event) => {
+                          setConsultationReturn((event.target as any).value);
+                        }}
+                      />
+                    </Col>
+                    <Col>
+                      <Form.Check
+                        type="checkbox"
                         label="Retorno"
+                        onChange={(event) => {
+                          setConsultationReturn((event.target as any).value);
+                        }}
+                      />
+                    </Col>
+                    <Col>
+                      <Form.Check
+                        type="checkbox"
+                        label="Intenação"
                         onChange={(event) => {
                           setConsultationReturn((event.target as any).value);
                         }}
@@ -422,11 +425,13 @@ export default function NewConsultation() {
                   </Row>
                   <Row className="mb-3">
                     <Col>
-                      <div className="d-grid gap-2">
-                        <Button variant="success" size="lg">
-                          Iniciar consulta
-                        </Button>
-                      </div>
+                      <Link href="/consulta">
+                        <div className="d-grid gap-2">
+                          <Button variant="success" size="lg">
+                            Iniciar consulta
+                          </Button>
+                        </div>
+                      </Link>
                     </Col>
                   </Row>
                 </>

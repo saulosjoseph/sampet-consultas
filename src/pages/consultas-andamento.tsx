@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Link from "next/link";
 import {
   Accordion,
   Button,
@@ -12,8 +13,8 @@ import {
 export default function InProgressConsultation() {
   return (
     <>
+      <Header></Header>
       <Container>
-        <Header></Header>
         <div>
           <Row className="mb-3">
             <Col>
@@ -129,11 +130,13 @@ export default function InProgressConsultation() {
                     </Row>
                     <Row className="mb-3">
                       <Col>
-                        <div className="d-grid gap-2">
-                          <Button variant="primary" size="lg">
-                            Iniciar consulta
-                          </Button>
-                        </div>
+                        <Link href="/consulta">
+                          <div className="d-grid gap-2">
+                            <Button variant="primary" size="lg">
+                              Iniciar consulta
+                            </Button>
+                          </div>
+                        </Link>
                       </Col>
                     </Row>
                   </Accordion.Body>
