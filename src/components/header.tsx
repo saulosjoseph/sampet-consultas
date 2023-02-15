@@ -1,13 +1,5 @@
 import Link from "next/link";
-import {
-  Button,
-  Col,
-  Container,
-  Navbar,
-  OverlayTrigger,
-  Row,
-  Tooltip,
-} from "react-bootstrap";
+import { Container, Navbar, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { AiFillHome } from "react-icons/ai";
 
 export default function Header() {

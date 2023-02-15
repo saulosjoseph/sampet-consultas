@@ -1,7 +1,6 @@
 import AnimalForm from "@/components/animalForm";
 import Header from "@/components/header";
 import OwnerForm from "@/components/ownerForm";
-import ownerForm from "@/components/ownerForm";
 import { Animal } from "@/interfaces/animal.interface";
 import { ConsultationInterface } from "@/interfaces/consultation.interface";
 import { User } from "@/interfaces/user.interface";
@@ -9,7 +8,6 @@ import { useEffect, useState } from "react";
 import { IoMdAdd } from "react-icons/io";
 import {
   Accordion,
-  Button,
   Col,
   Container,
   FloatingLabel,

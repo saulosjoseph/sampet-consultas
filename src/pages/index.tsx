@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
     <>
+      <Header></Header>
       <Container>
-        <div className="mt-5">
+        <div>
           <Row className="mb-3">
             <Col>
               <Link href="/nova-consulta">
