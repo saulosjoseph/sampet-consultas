@@ -5,7 +5,7 @@ import { Animal } from "@/interfaces/animal.interface";
 import { ConsultationInterface } from "@/interfaces/consultation.interface";
 import { User } from "@/interfaces/user.interface";
 import { useEffect, useState } from "react";
-import { IoMdAdd } from "react-icons/io";
+import { IoMdAddCircleOutline, IoMdRemoveCircleOutline } from "react-icons/io";
 import {
   Accordion,
   Col,
@@ -190,10 +190,15 @@ export default function Consultation() {
                         ))}
                       </Col>
                       <Col xs="2">
-                        <IoMdAdd
+                        <IoMdAddCircleOutline
                           size="2em"
                           className="mt-3"
                           onClick={() => setExamCount(examCount + 1)}
+                        />
+                        <IoMdRemoveCircleOutline
+                          size="2em"
+                          className="mt-3"
+                          onClick={() => setExamCount(examCount - 1)}
                         />
                       </Col>
                     </Row>
@@ -201,10 +206,16 @@ export default function Consultation() {
                       <Col xs="auto">
                         <h5>
                           Tratamento{" "}
-                          <IoMdAdd
+                          <IoMdAddCircleOutline
                             size="1.5em"
                             onClick={() =>
                               setTreatmentCount(treatmentCount + 1)
+                            }
+                          />
+                          <IoMdRemoveCircleOutline
+                            size="1.5em"
+                            onClick={() =>
+                              setTreatmentCount(treatmentCount - 1)
                             }
                           />
                         </h5>
