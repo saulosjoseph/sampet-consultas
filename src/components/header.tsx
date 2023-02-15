@@ -28,9 +28,9 @@ export default function Header() {
             <Navbar.Brand>
               <Image
                 alt="logo Sam Pet"
-                src="/logo.svg"
-                width={50}
-                height={50}
+                src="/logo.png"
+                width={70}
+                height={60}
                 className="d-inline-block align-top"
               />{" "}
             </Navbar.Brand>
