@@ -54,6 +54,7 @@ export default function Consultation() {
   const [animal, setAnimal] = useState<Animal>({} as Animal);
   const [anamnese, setAnamnese] = useState<string>("");
   const [treatmentCount, setTreatmentCount] = useState<number>(1);
+  const [examCount, setExamCount] = useState<number>(1);
 
   useEffect(() => {
     setOwner(mockData.user);
@@ -176,32 +177,40 @@ export default function Consultation() {
                     </Row>
                     <Row className="mb-3">
                       <Col>
-                        <FloatingLabel
-                          controlId="floatingTextarea2"
-                          label="Exames complementares"
-                        >
-                          <Form.Control
-                            as="textarea"
-                            placeholder="Leave a comment here"
-                            style={{ height: "100px" }}
-                          />
-                        </FloatingLabel>
+                        {[...Array(examCount)].map(() => (
+                          <div className="mb-2">
+                            <FloatingLabel
+                              controlId="examesInput"
+                              label="Exames complementares"
+                            >
+                              <Form.Control
+                                type="text"
+                                placeholder="Exames complementares"
+                              />
+                            </FloatingLabel>
+                          </div>
+                        ))}
+                      </Col>
+                      <Col xs="2">
+                        <IoMdAdd
+                          size="2em"
+                          className="mt-3"
+                          onClick={() => setExamCount(examCount + 1)}
+                        />
                       </Col>
                     </Row>
                     <Row className="mb-3 justify-content-center">
                       <Col xs="auto">
-                        <h5>Tratamento</h5>
-                      </Col>
-                      <Row className="justify-content-end">
-                        <Col xs="auto">
+                        <h5>
+                          Tratamento{" "}
                           <IoMdAdd
-                            size="2em"
+                            size="1.5em"
                             onClick={() =>
                               setTreatmentCount(treatmentCount + 1)
                             }
                           />
-                        </Col>
-                      </Row>
+                        </h5>
+                      </Col>
                       {[...Array(treatmentCount)].map(() => (
                         <>
                           <Row className="mb-1">
@@ -229,11 +238,11 @@ export default function Consultation() {
                             <Col>
                               <FloatingLabel
                                 controlId="viaAdministracaoInput"
-                                label="Via Administração"
+                                label="Administração"
                               >
                                 <Form.Control
                                   type="text"
-                                  placeholder="Via Administração"
+                                  placeholder="Administração"
                                 />
                               </FloatingLabel>
                             </Col>
