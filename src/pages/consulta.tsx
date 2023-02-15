@@ -175,8 +175,8 @@ export default function Consultation() {
                     </Row>
                     <Row className="mb-3">
                       <Col>
-                        {[...Array(examCount)].map(() => (
-                          <div className="mb-2">
+                        {[...Array(examCount)].map((element, index) => (
+                          <div className="mb-2" key={index}>
                             <FloatingLabel
                               controlId="examesInput"
                               label="Exames complementares"
@@ -220,8 +220,8 @@ export default function Consultation() {
                           />
                         </h5>
                       </Col>
-                      {[...Array(treatmentCount)].map(() => (
-                        <>
+                      {[...Array(treatmentCount)].map((element, index) => (
+                        <div key={index}>
                           <Row className="mb-1">
                             <Col>
                               <FloatingLabel
@@ -268,7 +268,7 @@ export default function Consultation() {
                             </Col>
                           </Row>
                           <hr />
-                        </>
+                        </div>
                       ))}
                     </Row>
                   </Accordion.Body>

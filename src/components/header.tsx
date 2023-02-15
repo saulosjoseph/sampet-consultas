@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container, Navbar, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { AiFillHome } from "react-icons/ai";
 
@@ -25,11 +26,11 @@ export default function Header() {
               </OverlayTrigger>
             </Link>
             <Navbar.Brand>
-              <img
-                alt=""
-                src="https://www.clipartmax.com/png/small/173-1739411_logo-de-pet-shop-png.png"
-                width="30"
-                height="30"
+              <Image
+                alt="logo Sam Pet"
+                src="/logo.svg"
+                width={50}
+                height={50}
                 className="d-inline-block align-top"
               />{" "}
             </Navbar.Brand>
