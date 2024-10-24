@@ -13,7 +13,7 @@ export default function Home() {
               <Link href="/nova-consulta">
                 <div className="d-grid gap-2">
                   <Button variant="primary" size="lg">
-                    Nova consulta
+                    Novo atendimento
                   </Button>
                 </div>
               </Link>

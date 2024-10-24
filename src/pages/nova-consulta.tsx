@@ -407,7 +407,34 @@ export default function NewConsultation() {
                     <Col>
                       <Form.Check
                         type="checkbox"
-                        label="Intenação"
+                        label="Internação"
+                        onChange={(event) => {
+                          setConsultationReturn((event.target as any).value);
+                        }}
+                      />
+                    </Col>
+                    <Col>
+                      <Form.Check
+                        type="checkbox"
+                        label="Banho"
+                        onChange={(event) => {
+                          setConsultationReturn((event.target as any).value);
+                        }}
+                      />
+                    </Col>
+                    <Col>
+                      <Form.Check
+                        type="checkbox"
+                        label="Tosa"
+                        onChange={(event) => {
+                          setConsultationReturn((event.target as any).value);
+                        }}
+                      />
+                    </Col>
+                    <Col>
+                      <Form.Check
+                        type="checkbox"
+                        label="Taxi"
                         onChange={(event) => {
                           setConsultationReturn((event.target as any).value);
                         }}
@@ -418,7 +445,7 @@ export default function NewConsultation() {
                     <Col>
                       <div className="d-grid gap-2">
                         <Button variant="primary" size="lg">
-                          Encaminhar para consulta
+                          Agendar
                         </Button>
                       </div>
                     </Col>
@@ -428,7 +455,7 @@ export default function NewConsultation() {
                       <Link href="/consulta">
                         <div className="d-grid gap-2">
                           <Button variant="success" size="lg">
-                            Iniciar consulta
+                            Iniciar
                           </Button>
                         </div>
                       </Link>
