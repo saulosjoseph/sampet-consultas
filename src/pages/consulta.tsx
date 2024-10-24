@@ -1,4 +1,4 @@
-import AnimalForm from "@/components/animalForm";
+import AnimalForm from "@/components/agenda/animalForm";
 import Header from "@/components/header";
 import OwnerForm from "@/components/ownerForm";
 import { Animal } from "@/interfaces/animal.interface";

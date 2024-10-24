@@ -52,6 +52,17 @@ export default function Home() {
               </Link>
             </Col>
           </Row>
+          <Row className="mb-3">
+            <Col>
+              <Link href="/agenda">
+                <div className="d-grid gap-2">
+                  <Button variant="primary" size="lg">
+                    Agenda
+                  </Button>
+                </div>
+              </Link>
+            </Col>
+          </Row>
         </div>
       </Container>
     </>

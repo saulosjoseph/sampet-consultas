@@ -10,7 +10,6 @@ export default function Header() {
     </Tooltip>
   );
   return (
-    <>
       <div className="my-3">
         <Navbar bg="light">
           <Container>
@@ -37,6 +36,5 @@ export default function Header() {
           </Container>
         </Navbar>
       </div>
-    </>
   );
 }
